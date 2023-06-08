@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>projects</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
+    type="text/css" />
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="Acss/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="ahoverA/ahoverA.css">
+
+  <style>
+    .text-gradient {
+      background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .bg-gradient-primary-to-secondary {
+      /* background: #1e30f3;
+          background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%); */
+      position: relative;
+      background: #1e30f3;
+      background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+      overflow: hidden;
+    }
+
+
+
+    .videobox {
+      position: relative;
+      width: 100%;
+      height: 480px;
+      padding-bottom: 56.25%;
+    }
+
+    .videobox iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+
+
+
+    #s1,
+    #s2,
+    #s3,
+    #s4,
+    #s5,
+    #s6,
+    #s7 {
+      position: absolute;
+      width: 100%;
+      height: 500px;
+      z-index: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      visibility: hidden;
+      top: 100%;
+      margin-top: 30px;
+
+  
+
+
+    }
+
+
+
+
+
+    .containera {
+      position: relative;
+      max-width: 800px;
+
+      margin: 0 auto;
+    }
+
+    .image-containera {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+      display: none;
+      text-align: center;
+      background-color: blue;
+    }
+
+    .image-containera img {
+
+      max-width: 100%;
+      max-height: 100%;
+      margin: auto;
+    }
+
+
+    .box {
+      max-width: auto;
+      height: 750px;
+
+    }
+
+    @media (max-width: 768px) {
+
+      /* 在樣式調整 */
+      .box {
+        max-width: 100%;
+        height: 660px;
+
+      }
+    }
+
+    @media (max-width: 576px) {
+
+      /* 樣式調整 */
+      .box {
+        max-width: 100%;
+        height: 640px;
+
+      }
+    }
+
+
+      /* 0526_2033 */
+      .wait {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip-text {
+            visibility: hidden;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            border-radius: 4px;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 45%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            height: 35px;
+            width: 80px;
+        }
+
+        .tooltip-message {
+            visibility: hidden;
+            background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+          
+            color:#fff;
+            text-align: center;
+            padding: 5px;
+            border-radius: 4px;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 80%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            height: 35px;
+            width: 110px;
+        }
+
+        .wait:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .wait:hover .tooltip-message {
+            visibility: visible;
+            opacity: 1;
+        }
+  </style>
+
+
+
+
+
+
+</head>
+
+
+<body class="d-flex flex-column h-100 bg-light">
+  <main class="flex-shrink-0">
+    <!-- Navigation-->
+    <nav class="snip1429 navbar navbar-expand-lg navbar-light  py-3">
+      <div class="container ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+          <!-- 
+                                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                              -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0  small ">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+             <!-- 
+                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                        -->
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="certificate.html">Certificate</a></li>
+            <!--目前沒有
+                                      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                  -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Page Content-->
+    <section class="container py-5 bg-light">
+      <div class=" px-5 mb-1">
+        <div class="text-center mb-1">
+          <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="container bg-light">
+
+      <div class="d-flex align-items-center justify-content-between mb-1">
+        <ul>
+          <h2 class="text-primary fw-bolder ">作品集與專題</h2>
+        </ul>
+      </div>
+      <!-- Image Showcases-->
+      <hr> <br><br>
+      <section class="showcase">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <!-- 
+				  <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')">
+				-->
+
+
+            <div class="col-lg-6 order-lg-2 sm-1 showcase-img " style=" height:470px; background-color:white">
+
+              <div class="videobox">
+                <iframe h src="https://www.youtube.com/embed/Eyz1Kpl16GE" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen="true"></iframe>
+              </div>
+
+            </div>
+            <div class="col-lg-6  sm-1 my-auto showcase-text">
+              <h3 style="color:blue">物聯網與行動裝置</h3>
+
+              專題使用技術盤點 :
+              <ol>
+                <li>疫苗護照 :
+                  <ul style="list-style-type: disc;">
+                    <li> -SharedPreferences (使用者-新增,修改)</li>
+                    <li>-SQLiteDatabase + ArrayList新增,常按(修改 刪除)</li>
+                  </ul>
+                </li>
+
+                <li>防疫實聯 :
+                  <ul style="list-style-type: disc;">
+                    <li>-SQLiteDatabase + SimpleCursorAdapter</li>
+                    <li>-CUUD</li>
+                    <li> -搜尋</li>
+                  </ul>
+                </li>
+
+                <li>公告影片 :
+                  <ul style="list-style-type: disc;">
+                    <li>-webview</li>
+                </li>
+              </ol>
+
+
+              <a href="https://www.youtube.com/watch?v=8u5zmkheryQ&list=PLyy3yK1kz7afyozS2cRicZQED_JRTiQ9O"
+                target="_blank">這個連結會連到APP全部播放清單</a> YouTube
+              <br>
+              <a href="https://www.youtube.com/playlist?list=PLyy3yK1kz7afuvwj9KEtIEl8lYH83aDkq"
+                target="_blank">這個連結會連到HT66全部播放清單</a> YouTube
+
+            </div>
+          </div>
+          <div class="row g-0">
+
+            <!--				
+          <div class="col-lg-6 text-whiteg " style=" height:470px; background-color:white">
+				  <iframe width="560" height="470" src="https://www.youtube.com/embed/9hx8XRLQV6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				  
+				  </div>
+				 	-->
+
+            <div class="col-lg-6 sm-1 text-white showcase-img" style="background-image: url('assets/img/IOT_02.jpg')">
+            </div>
+
+            <div class="col-lg-6 sm-1 my-auto showcase-text">
+              <h3>windows/Linux</h3>
+              <p>
+                <li>python-sensor control(web/app)</li>
+              </p>
+              <p>
+                <li>WEB-bootstrap</li>
+              </p>
+              <p>
+                <li>WEB-djnago</li>
+              </p>
+              <p>
+                <li>APP-java</li>
+              </p>
+              <p>
+                <li>CRUD(sqlite/firbase/MySQL)</li>
+              </p>
+            </div>
+          </div>
+
+          <hr>
+
+
+
+          <div class="row g-0">
+
+            <div class="col-lg-6 sm-1 order-lg-2 text-white showcase-img"
+              style="background-image: url('assets/img/MIS_01.jpg')"></div>
+
+
+
+            <div class="col-lg-6 sm-1 my-auto showcase-text">
+              <h3 style="color:blue">雲端與網管-桃竹苗-幼獅職訓局</h3>
+
+              全面整合技術：虛擬化、資源共享、NAS、設備管制等的技術。
+              <ol>
+                <li>防火牆
+
+                </li>
+
+                <li>Switch
+
+                </li>
+
+                <li>vSphere應用
+                </li>
+
+                <li>Windows Services
+                </li>
+
+                <li>Windows Active Directory
+                </li>
+                <li>Exchange or SoMail
+                </li>
+                <li>Xen Server VDA & APP
+                </li>
+                <li>無線網路建置
+                </li>
+
+              </ol>
+
+            </div>
+          </div>
+
+
+
+          <div class="row g-0">
+
+            <div class="col-lg-6 sm-1 text-white showcase-img"
+              style="background-image: url('assets/img/XenCenter.jpg')"></div>
+
+            <div class="col-lg-6 sm-1 my-auto showcase-text">
+              <p>
+                <li>Xen Server VDA & APP 安裝一台XenServer</li>
+              </p>
+              <p>
+                <li> 安裝一台Win 7作為Deploy Client的image範本，Image範本安裝軟體並利用update機制部屬</li>
+              </p>
+              <p>
+                <li>部屬3台win7供user使用</li>
+              </p>
+              <p>
+                <li>架設xenapp server並發佈office &pdf供使用者使用</li>
+              </p>
+              <p>
+                <li>Xen規則限定user無法導向usb、無法使用printscreen，以利實現檔案無法複製及帶出公司內部</li>
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- Testimonials-->
+
+      <div class="py-3 bg-light">
+        <div class="container">
+
+          <br>
+          <hr>
+
+          <div class="row">
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+
+                <img class="img-fluid rounded" src="assets/img/studentweb.jpg" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">學生WEB(djnago-api)</p>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+
+                <img class="img-fluid rounded" src="assets/img/googlescript.jpg" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">線上點餐(GOOGLE/script->LINEnotify) </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+
+                <img class="img-fluid rounded" src="assets/img/bookstore.jpg" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">webform書店(C#)</p>
+                </div>
+
+              </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="img-fluid rounded" src="assets/img/english_app.jpg" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">英文APP(java/語音輸出)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+
+                <img class="img-fluid rounded" src="assets/img/access_01.jpg" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">Access(系統分析/進銷存) </p>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="img-fluid rounded" src="assets/img/winform.jpg" alt="..." />
+                <div class="card-body">
+                  <p class="card-text">winform應用程式(C#)</p>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <hr>
+
+
+      <div class="container">
+
+  <script type="text/javascript">
+    function MM_showHideLayers() { //v9.0
+      var i, p, v, obj, args = MM_showHideLayers.arguments;
+      for (i = 0; i < (args.length - 2); i += 3)
+        with(document) if (getElementById && ((obj = getElementById(args[i])) != null)) {
+          v = args[i + 2];
+          if (obj.style) {
+            obj = obj.style;
+            v = (v == 'show') ? 'visible' : (v == 'hide') ? 'hidden' : v;
+          }
+          obj.visibility = v;
+        }
+    }
+  </script>
+
+        <div class="row">
+          <div class="box">
+            <div class="col-lg-12">
+              <hr style="width: 30%; margin: 0 auto;">
+
+              <h2 class="intro-text text-center">about</h2>
+
+
+              <hr style="width: 30%; margin: 0 auto;">
+              <br>
+              <div class="containera" style="text-align: center; width: 100%; height: auto">
+
+
+
+                <span><img src="album/demoA1.jpg" width="auto" height="78" border="0"
+                    onclick="MM_showHideLayers('s3','','hide','s4','','hide','s5','','hide','s6','','hide','s1','','show','s2','','hide','s7','','hide')" /></span>
+                <div id="s1"><img src="album/demoA1.jpg" style="width: 100%; height: auto" /></div>
+
+                <script>
+                  // 
+                  document.getElementById("s1").style.visibility = "visible";
+                </script>
+
+
+                <span><img src="album/demoB1.jpg" width="auto" height="78" border="0"
+                    onclick="MM_showHideLayers('s1','','hide','s2','','show','s3','','hide','s4','','hide','s5','','hide','s6','','hide','s7','','hide')" /></span>
+                <div id="s2"><img src="album/demoB1.jpg" style="width: 100%; height: auto" /></div>
+
+                <span><img src="album/demoC1.jpg" width="auto" height="78" border="0"
+                    onclick="MM_showHideLayers('s1','','hide','s2','','hide','s3','','show','s4','','hide','s5','','hide','s6','','hide','s7','','hide')" /></span>
+                <div id="s3"><img src="album/demoC1.jpg" style="width: 100%; height: auto" /></div>
+
+
+                <span><img src="album/demoD1.jpg" width="auto" height="78" border="0"
+                    onclick="MM_showHideLayers('s1','','hide','s2','','hide','s3','','hide','s4','','show','s5','','hide','s6','','hide','s7','','hide')" /></span>
+                <div id="s4"><img src="album/demoD1.jpg" style="width: 100%; height: auto" /></div>
+
+                <span><img src="album/demoD2.jpg" width="auto" height="78" border="0"
+                    onclick="MM_showHideLayers('s1','','hide','s2','','hide','s3','','hide','s4','','hide','s5','','show','s6','','hide','s7','','hide')" /></span>
+                <div id="s5"><img src="album/demoD2.jpg" style="width: 100%; height: auto" /></div>
+
+                <span><img src="album/demoE1.jpg" width="auto" height="78" border="0"
+                    onclick="MM_showHideLayers('s1','','hide','s2','','hide','s3','','hide','s4','','hide','s5','','hide','s6','','show','s7','','hide')" /></span>
+                <div id="s6"><img src="album/demoE1.jpg" style="width: 100%; height: auto" /></div>
+
+                <span><img src="album/demoE2.jpg" width="auto" height="78" border="0"
+                    onclick="MM_showHideLayers('s1','','hide','s2','','hide','s3','','hide','s4','','hide','s5','','hide','s6','','hide','s7','','show')" /></span>
+                <div id="s7"><img src="album/demoE2.jpg" style="width: 100%; height: auto" /></div>
+
+
+
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /.container -->
+
+
+
+
+
+
+
+      <!-- Call to action section-->
+
+      <br>
+      <section class="py-2 bg-gradient-primary-to-secondary text-white pt-1">
+        <div class="container px-2 my-2">
+          <div class="text-center">
+            <h2 class="display-4 fw-bolder  mt-2">Let's build something together</h2>
+
+
+          </div>
+        </div>
+      </section>
+
+      <br><br>
+
+    </div>
+
+
+  </main>
+
+  <!-- Footer-->
+  <footer class="bg-white py-4 mt-auto">
+    <div class="container px-5">
+      <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+        <div class="col-auto">
+          <div class="small m-0">Copyright &copy; Your Website 2023</div>
+        </div>
+                  <div class="col-auto">
+
+                    <div class="wait">
+                      <a class="small" href="#!">Privacy</a>
+                      <span class="mx-1">&middot;</span>
+                      <a class="small" href="#!">Terms</a>
+                      <span class="mx-1">&middot;</span>
+                      
+                      <div class="tooltip-text">尚未</div>
+
+             
+                    </div>
+
+                    <div class="wait">
+                        <a class="small" href="https://docs.google.com/forms/d/e/1FAIpQLSdvI4EcYu_SW1AfV5-dGDg65ElYtJlXcsjpA6PfA9i2fcn1DQ/viewform?usp=sf_link" target="_blank">Contact</a>
+                        <div class="tooltip-message">連絡我Forms</div>
+                    </div>
+
+                    
+                </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="Ajs/scripts.js"></script>
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+  <!-- * *                               SB Forms JS                               * *-->
+  <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
